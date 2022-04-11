@@ -2,6 +2,9 @@
 @import '_global';
 @import '_fonts';
 
+
+// start header
+
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -59,6 +62,10 @@
     color: #ffffff;
   }
 }
+
+// end header
+//start search section
+
 .search{
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,3 +121,121 @@
     }
   }
 }
+
+//end search section
+//start products section
+
+.products{
+  padding: 110px 0;
+  background-color: $grey;
+}
+
+.products__inner-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products__inner-btn{
+  text-align: center;
+  margin-bottom: 60px;
+  button{
+    padding: 12px 21px;
+    border: none;
+    background-color: #ffffff;
+    color: $bg;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    & + button{
+      margin-left: 5px;
+    }
+    &.mixitup-control-active{
+      background-color: $red;
+      color: #ffffff;
+  }
+  }
+
+}
+
+.product__item{
+  min-width: 442px;
+  box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+  margin-bottom: 30px;
+  &-img{
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+  }
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    min-height: 90px;
+    font-weight: 500;
+    border-bottom: 1px solid #e7ecf2;
+  }
+  &-name{
+    max-width: 310px;
+  }
+  &-title{
+    color: $bg;
+    font-size: 18px;
+    display: block;
+    font-weight: 700;
+  }
+  &-category{
+    display: block;
+    font-size: 14px;
+    color: $green;
+  }
+  &-price{
+    font-size: 20px;
+    font-weight: 700;
+    color: $bg;
+  }
+  &-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 10px 30px;
+  }
+  &-author{
+    display: flex;
+    align-items: center;
+    .avatar{
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-right: 14px;
+    }
+    span{
+      font-size: 14px;
+      font-weight: 500; 
+    }
+  }
+}
+
+.products__bottom-btn{
+  
+  text-align: center;
+  button{
+    margin: 45px 5px 0;
+    box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+    border: none;
+    background-color: #ffffff;
+    color: $bg;
+    padding: 20px 30px;
+    cursor: pointer;
+  }
+}
+
+//end products section
