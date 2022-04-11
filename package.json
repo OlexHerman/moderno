@@ -19,9 +19,8 @@
     "gulp-uglify": "^3.0.2",
     "normalize.css": "^8.0.1",
     "sass": "^1.49.11",
-    "slick-carousel": "^1.8.1"
-  },
-  "dependencies": {
+    "slick-carousel": "^1.8.1",
     "magnific-popup": "^1.1.0"
   }
+
 }
