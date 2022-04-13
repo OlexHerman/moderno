@@ -252,8 +252,7 @@
 .product-slider{
   padding: 110px 0 120px;
   &__inner{
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 auto;
   }
   .slick-dots{
     text-align: center;
@@ -281,6 +280,10 @@
     }
     
   }
+}
+
+.slick-slide{
+  margin: 0 7px;
 }
 
 //end slider section
@@ -341,14 +344,60 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 //end advantages section
+//start author section
+.author{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box{
+    background-color: $green;
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title{
+    font-size: 30px;
+    line-height: 36px;
+    color: #ffffff;
+    max-width: 300px;
+    margin-right: 45px;
+    span{
+      @include f700;
+    }
+  }
+  &__link{
+    transition: all .5s;
+    font-size: 18px;
+    line-height: 36px;
+    color: #263238;
+    background-color: #ffffff;
+    padding: 14px 43px;
+    &:hover{
+      background-color: $red;
+      color: #fff;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end author section
