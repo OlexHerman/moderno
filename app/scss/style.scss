@@ -4,23 +4,19 @@
 
 
 // start header
-
 .header__top-inner {
   display: flex;
   justify-content: space-between;
   height: 91px;
   align-items: center;
 }
-
 .header__text {
   margin-left: auto;
   margin-right: 50px;
-
   span {
     color: $red;
   }
 }
-
 .header__btn {
   padding: 4px;
   width: 72px;
@@ -29,26 +25,21 @@
   color: #ffffff;
   font-size: 12px;
 }
-
 .header__btn-login {
   background-color: $green;
 }
-
 .header__btn-register {
   background-color: $red;
   margin-left: 7px;
 }
-
 .header__menu {
   background-color: $bg;
 }
-
 .menu {
   height: 60px;
   display: flex;
   align-items: center;
 }
-
 .menu__list {
   li {
     display: inline-block;
@@ -57,12 +48,10 @@
       margin-right: 30px;
     }
   }
-
   a {
     color: #ffffff;
   }
 }
-
 // end header
 //start search section
 
@@ -73,7 +62,6 @@
   min-height: 543px;
 
 }
-
 .search__inner{
   padding: 155px 0 100px;
   color: #ffffff;
@@ -121,21 +109,17 @@
     }
   }
 }
-
 //end search section
 //start products section
-
 .products{
   padding: 110px 0;
   background-color: $grey;
 }
-
 .products__inner-box{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .products__inner-btn{
   text-align: center;
   margin-bottom: 60px;
@@ -155,9 +139,7 @@
       color: #ffffff;
   }
   }
-
 }
-
 .product__item{
   max-width: 442px;
   width: 100%;
@@ -231,9 +213,7 @@
     }
   }
 }
-
 .products__bottom-btn{
-  
   text-align: center;
   button{
     margin: 45px 5px 0;
@@ -245,10 +225,8 @@
     cursor: pointer;
   }
 }
-
 //end products section
 //start slider section
-
 .product-slider{
   padding: 110px 0 120px;
   &__inner{
@@ -264,7 +242,6 @@
       background-color: $green;
       }
      }
-
      button{
       border-radius: 50%;
       background-color: rgb(232, 232, 232); 
@@ -277,28 +254,22 @@
       cursor: pointer;
       outline: none;
      }
-    }
-    
+    }  
   }
 }
-
 .slick-slide{
   margin: 0 7px;
 }
-
 //end slider section
 //start advantages section
-
 .advantages{
   background-color: $bg;
   padding: 120px 0 110px;
 }
-
 .advantages__title{
   color: #ffffff;
   margin-bottom: 80px;
 }
-
 .advantages__inner{
   display: flex;
   justify-content: space-between;
@@ -316,7 +287,6 @@
         transition: all .5s;
       }
     }
-
     .advantages__item-title{
       color: $green;
     }
@@ -343,7 +313,6 @@
     color: #b0bec5;
   }
 }
-
 //end advantages section
 //start author section
 .author{
@@ -387,17 +356,38 @@
 
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 //end author section
+//start tutorial section
+.tutorial{
+  padding: 60px 0 120px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    max-width: 370px;
+    width: 100%;
+  }
+}
+.tutorial__item{
+  &-images{
+    min-height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+  &-title{
+    font-size: 24px;
+    @include f700;
+    color: $bg;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 30px 10px;
+
+  }
+}
+
+
+
+//end tutorial section
