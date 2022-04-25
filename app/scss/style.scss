@@ -52,6 +52,16 @@
     color: #ffffff;
   }
 }
+
+.header__circle{
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  & + .header__circle{
+    margin-left: 15px;
+  }
+}
 // end header
 //start search section
 
@@ -551,6 +561,4 @@
 
   }
 }
-
-
 //end footer
